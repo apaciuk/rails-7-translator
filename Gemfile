@@ -26,6 +26,16 @@ gem 'bootsnap', '>= 1.4.4', require: false
 #  test components
 gem 'view_component'
 
+group :development, :test do
+gem 'rspec-rails', '~> 5.0'
+end
+
+group :test do
+gem 'capybara'
+gem 'webdrivers'
+gem 'chromedriver-helper'
+end
+
 group :development do
   # Code style checking
   gem 'rubocop', '~> 1.23'
@@ -76,3 +86,5 @@ gem 'dotenv-rails', '~> 2.7'
 gem 'rails_real_favicon', '~> 0.1.1'
 
 gem "git-up", "~> 0.5.12"
+
+
