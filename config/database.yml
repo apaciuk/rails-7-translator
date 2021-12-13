@@ -73,6 +73,6 @@ test:
 #
 production:
   <<: *default
-  database: jumpstart_production
+  database: translator_production
   username: anton
   password: <%= ENV["LURVE_TRACKER_DATABASE_PASSWORD"] %>
